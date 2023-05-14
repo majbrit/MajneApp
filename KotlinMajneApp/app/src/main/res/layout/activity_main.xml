@@ -36,6 +36,13 @@
                 android:layout_margin="6dp"
                 android:onClick="otherxmlAction"
                 android:text="Taschenrechner" />
+
+            <Button
+                android:id="@+id/activity2Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="activity2Action"
+                android:text="Button" />
         </LinearLayout>
 
     </TableRow>
