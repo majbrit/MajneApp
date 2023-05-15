@@ -21,21 +21,22 @@
 
             <Button
                 android:id="@+id/movingButton"
+                style="@style/buttonNormal"
                 android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/rounded_corner"
-                android:layout_margin="6dp"
                 android:onClick="movingAction"
                 android:text="Button" />
 
             <Button
                 android:id="@+id/otherxmlButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/rounded_corner"
-                android:layout_margin="6dp"
+                style="@style/buttonNormal"
                 android:onClick="otherxmlAction"
                 android:text="Taschenrechner" />
+
+            <Button
+                android:id="@+id/activity2Button"
+                style="@style/buttonNormal"
+                android:onClick="activity2Action"
+                android:text="Button" />
         </LinearLayout>
 
     </TableRow>
