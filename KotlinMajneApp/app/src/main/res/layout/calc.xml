@@ -8,15 +8,12 @@
     android:orientation="vertical"
     android:background="@color/almostWhite"
     tools:ignore="HardcodedText"
-    tools:context=".MainActivity">
+    tools:context=".Calculator">
 
 
     <Button
         android:id="@+id/backButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/rounded_corner"
-        android:layout_margin="6dp"
+        style="@style/buttonNormal"
         android:onClick="menuAction"
         android:text="Menü" />
 
