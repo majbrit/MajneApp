@@ -13,10 +13,7 @@
 
     <Button
         android:id="@+id/backButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/rounded_corner"
-        android:layout_margin="6dp"
+        style="@style/buttonNormal"
         android:onClick="menuAction"
         android:text="Menü" />
 
