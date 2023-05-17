@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/almostWhite"
+    tools:ignore="HardcodedText"
+    tools:context=".Animation">
+
+    <Button
+        android:id="@+id/animateButton"
+        style="@style/buttonNormal"
+        android:onClick="clockwiseAction"
+        android:text="Drehen" />
+
+    <ImageView
+        android:id="@+id/catImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/cat" />
+</LinearLayout>
