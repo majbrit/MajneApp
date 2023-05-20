@@ -36,7 +36,13 @@
                 android:id="@+id/activity2Button"
                 style="@style/buttonNormal"
                 android:onClick="activity2Action"
-                android:text="Button" />
+                android:text="Fullscreen" />
+
+            <Button
+                android:id="@+id/animationButton"
+                style="@style/buttonNormal"
+                android:onClick="animationAction"
+                android:text="Animation" />
         </LinearLayout>
 
     </TableRow>

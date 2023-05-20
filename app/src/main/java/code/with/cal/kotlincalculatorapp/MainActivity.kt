@@ -11,17 +11,9 @@ import kotlinx.android.synthetic.main.calc.*
 
 class MainActivity : AppCompatActivity()
 {
-
-
     var width = 0
     var height = 0
-
-
     var direction = 20f
-
-    //var calc = CalcActivity()
-
-
 
     override fun onCreate(savedInstanceState: Bundle?)
     {
@@ -78,7 +70,14 @@ class MainActivity : AppCompatActivity()
         }
     }
 
-
+    fun animationAction(view: View)
+    {
+        if (view is Button)
+        {
+            val intent = Intent(this, Animation::class.java)
+            startActivity(intent)
+        }
+    }
 }
 
 
