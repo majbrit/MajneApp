@@ -1,3 +1,3 @@
 # MajneApp
 
-![Screenshot](KotlinMajneApp/assets/logo.jpg)
+![Screenshot](assets/logo.jpg)
