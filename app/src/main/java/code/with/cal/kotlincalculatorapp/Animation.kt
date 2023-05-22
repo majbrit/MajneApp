@@ -3,6 +3,7 @@ package code.with.cal.kotlincalculatorapp
 import android.R.attr.animation
 import android.animation.Animator
 import android.animation.ValueAnimator
+import android.media.MediaPlayer
 import android.os.Bundle
 import android.view.View
 import android.view.animation.Animation.AnimationListener
@@ -15,6 +16,7 @@ import kotlinx.android.synthetic.main.animation.*
 
 class Animation : AppCompatActivity() {
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.animation)
@@ -23,7 +25,11 @@ class Animation : AppCompatActivity() {
     {
         if (view is Button)
         {
-            var animation1 = AnimationUtils.loadAnimation(getApplicationContext(),
+            var mediaPlayer: MediaPlayer = MediaPlayer.create(this, R.raw.schnips)
+            mediaPlayer.start()
+
+            var animation1 = AnimationUtils.loadAnimation(
+                applicationContext,
             R.anim.clockwise);
             catImage.startAnimation(animation1);
         }
@@ -33,6 +39,9 @@ class Animation : AppCompatActivity() {
     {
         if (view is Button)
         {
+            var mediaPlayer: MediaPlayer = MediaPlayer.create(this, R.raw.schnips)
+            mediaPlayer.start()
+            //mediaPlayer.start()
             /*
             var animation1 = AnimationUtils.loadAnimation(getApplicationContext(),
                 R.anim.fadein);

@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity()
     var height = 0
     var direction = 20f
 
+
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
