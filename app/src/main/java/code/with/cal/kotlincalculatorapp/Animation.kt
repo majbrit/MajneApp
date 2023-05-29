@@ -16,17 +16,28 @@ import kotlinx.android.synthetic.main.animation.*
 
 class Animation : AppCompatActivity() {
 
+    lateinit var klopf: MediaPlayer
+    lateinit var pfueh: MediaPlayer
+    lateinit var schnips: MediaPlayer
+    lateinit var tuer: MediaPlayer
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.animation)
+
+        klopf = MediaPlayer.create(this, R.raw.klopf)
+        pfueh = MediaPlayer.create(this, R.raw.pfueh)
+        schnips = MediaPlayer.create(this, R.raw.schnips)
+        tuer = MediaPlayer.create(this, R.raw.tuer)
+
+        klopf.start()
     }
     fun clockwiseAction(view: View)
     {
         if (view is Button)
         {
-            var mediaPlayer: MediaPlayer = MediaPlayer.create(this, R.raw.schnips)
-            mediaPlayer.start()
+            schnips.start()
 
             var animation1 = AnimationUtils.loadAnimation(
                 applicationContext,
@@ -39,13 +50,7 @@ class Animation : AppCompatActivity() {
     {
         if (view is Button)
         {
-            var mediaPlayer: MediaPlayer = MediaPlayer.create(this, R.raw.schnips)
-            mediaPlayer.start()
-            //mediaPlayer.start()
-            /*
-            var animation1 = AnimationUtils.loadAnimation(getApplicationContext(),
-                R.anim.fadein);
-            catImage.startAnimation(animation1);*/
+            tuer.start()
 
             val animator = ValueAnimator.ofFloat(0f, 200f)
             animator.addUpdateListener {
@@ -74,6 +79,7 @@ class Animation : AppCompatActivity() {
                         .show()
                     animator2.duration = 5000L
                     animator2.start()
+                    pfueh.start()
                     //finish()
                 }
 
