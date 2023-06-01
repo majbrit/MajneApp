@@ -12,6 +12,7 @@
         <activity android:name=".MainActivity2" />
         <activity android:name=".Calculator" />
         <activity android:name=".Animation" />
+        <activity android:name=".DragAndDrop" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

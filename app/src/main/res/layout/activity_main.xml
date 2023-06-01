@@ -43,6 +43,12 @@
                 style="@style/buttonNormal"
                 android:onClick="animationAction"
                 android:text="Animation" />
+
+            <Button
+                android:id="@+id/draganddropButton"
+                style="@style/buttonNormal"
+                android:onClick="draganddropAction"
+                android:text="Drag and Drop" />
         </LinearLayout>
 
     </TableRow>

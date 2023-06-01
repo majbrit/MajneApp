@@ -79,6 +79,15 @@ class MainActivity : AppCompatActivity()
             startActivity(intent)
         }
     }
+
+    fun draganddropAction(view: View)
+    {
+        if (view is Button)
+        {
+            val intent = Intent(this, DragAndDrop::class.java)
+            startActivity(intent)
+        }
+    }
 }
 
 
